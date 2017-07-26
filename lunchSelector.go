@@ -10,10 +10,18 @@ import (
 func main() {
 	rand.Seed(time.Now().Unix())
 	restaurants := []string{
-   	 "Locked out",
-   	 "Pipes broke",
-         "Food poisoning",
-         "Not feeling well",
+   	"Monsoon",
+        "Jack Brown's",
+        "Tai Fresh",
+        "Market Street Market",
+        "Himalayan Fusion",
+        "The Pie Chest",
+        "The Whiskey Jar",
+        "Omni Buffet",
+        "Revolutionary Soup",
+        "Christian's Pizza",
+        "The Spot",
+        "Pearl Island Catering",
 }
 n := rand.Int() % len(restaurants)
 fmt.Print("Today's restaurant is: ", restaurants[n])
