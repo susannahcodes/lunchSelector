@@ -3,13 +3,17 @@ package main
 
 import (
 	"fmt"
-	"net/http"
+	"math/rand"
+        "time"
 )
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "hello world")
-	})
-
-	http.ListenAndServe(":8080", nil)
+	rand.Seed(time.Now().Unix())
+	restaurants := []string{
+   	 "Locked out",
+   	 "Pipes broke",
+         "Food poisoning",
+         "Not feeling well",
 }
+n := rand.Int() % len(reasons)
+fmt.Print("Today's restaurant is: ", reasons[n])
