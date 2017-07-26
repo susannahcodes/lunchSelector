@@ -15,6 +15,6 @@ func main() {
          "Food poisoning",
          "Not feeling well",
 }
-n := rand.Int() % len(reasons)
-fmt.Print("Today's restaurant is: ", reasons[n])
+n := rand.Int() % len(restaurants)
+fmt.Print("Today's restaurant is: ", restaurants[n])
 }
