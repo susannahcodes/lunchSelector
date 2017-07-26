@@ -17,3 +17,4 @@ func main() {
 }
 n := rand.Int() % len(reasons)
 fmt.Print("Today's restaurant is: ", reasons[n])
+}
